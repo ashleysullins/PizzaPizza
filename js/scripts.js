@@ -7,12 +7,17 @@ function Pizza(quanity, toppings, pieSize) {
 var topping = 0.50;
 var small = 5.00;
 var medium = 8.00;
-var large = 12.00;
+var large = 11.00;
 
 Pizza.prototype.price = function() {
   return ((this.toppings * topping) + this.pieSize) * this.quanity;
 }
 
+function totalPrice() {
+  for each Pizza {
+  + Pizza.price();
+  }
+}
 //
 // $(document).ready(function() {
 //   $("form#factorial").submit(function(event) {
