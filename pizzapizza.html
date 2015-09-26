@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza Pizza!</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tell me how you want your pizza.</h1>
+
+      <form id="pizza">
+        <div class="form-group">
+          <label for="size">Step 1 - Choose your size</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" id="5" value="5">
+              Small
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" id="8" value="8">
+              Medium
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" id="11" value="11">
+              Large
+            </label>
+          </div>
+          
+          <label for="toppings">Step 2 - Choose your toppings</label>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="toppings" value="1">
+              Pepperoni
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="toppings"  value="1">
+              Onions
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="toppings"  value="1">
+              Green Pepper
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="toppings" value="1">
+              Hamburger
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="toppings" value="1">
+              Avocado
+            </label>
+          </div>
+          
+        <label for="quantity">Step 3 - Choose the Quantity</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="quantity" id="1" value="option1">
+            One
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="quantity" id="2" value="option2">
+            Two
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="quantity" id="3" value="option3">
+            Three
+          </label>
+        </div>
+        </div>
+
+        <button type="submit" class="btn">Calculate my total</button>
+      </form>
+
+      <div id="result">
+        Your total is <span class="amount"></span>
+      </div>
+    </div>
+  </body>
+</html>

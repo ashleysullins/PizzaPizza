@@ -11,9 +11,4 @@ describe('pizza', function() {
     var twoLargeThreeTopPizza = new Pizza(2, 3, 11);
     expect(twoLargeThreeTopPizza.price()).to.equal(25);
   });
-  it("make one large one topping pizza and two medium two topping pizzas for $29.50", function() {
-    var oneLargeOneTopPizza = new Pizza(1, 1, 11);
-    var twoMediumTwoTopPizza = new Pizza(2, 2, 8);
-    expect(totalPrice()).to.equal(29.50);
-  });
 });
