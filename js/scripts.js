@@ -18,13 +18,13 @@ $(document).ready(function() {
     var pizza3 = 0;
     var pizza4 = 0;
     
-    var pieSize = parseInt($("input#size").val());
-    var toppings = parseInt($("input#toppings").val());
-    var quantity = parseInt($("input#quantity").val()); 
+    var pieSize = parseInt($("input[name=size]:checked").val());
+    var toppings = parseInt($("input[name=toppings]:checked").val());
+    var quantity = parseInt($("input[name=quantity]:checked").val()); 
     var order = new Pizza(quantity, toppings, pieSize);
     var total = order.price();
 
-      $(".total").text(total);
+      $(".amount").text(total);
       $("#result").show();
 
     event.preventDefault();
