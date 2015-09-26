@@ -1,12 +1,12 @@
-# <Name>
+# PizzaPizza
 
-##### <Brief Description>, <Date>
+##### Calculate the total of your pizza order, 9/25/15
 
-#### <Authors>
+#### Ashley Sullins
 
 ## Description
 
-
+This application will allow the user to select from different sizes, toppings, and quantities of a pizza order. Based on the selection, a total will appear on the screen. This exercise is part of the seventh week of Epicodus, a code school, to practice our javascript and jquery skills. 
 
 ## Setup
 
@@ -23,7 +23,7 @@ No special setup required
 
 
 
-Copyright (c) 2015 <Authors>
+Copyright (c) 2015 Ashley Sullins
 
 This software is licensed under the MIT license.
 

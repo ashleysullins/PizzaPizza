@@ -10,22 +10,31 @@ Pizza.prototype.price = function() {
   return ((this.toppings * topping) + this.pieSize) * this.quantity;
 }
 
+function clearForm()
+  {
+    $(':checkbox').prop('checked', false);
+  };
+
+
 $(document).ready(function() {
   $("form#pizza").submit(function(event) {
     
-    var pizza = 0;
-    var pizza2 = 0;
-    var pizza3 = 0;
-    var pizza4 = 0;
-    
     var pieSize = parseInt($("input[name=size]:checked").val());
-    var toppings = parseInt($("input[name=toppings]:checked").val());
+    
+    var toppings = 0;
+    var totalToppingsArray = [];
+      $(".toppings:checked").each(function() {
+        totalToppingsArray[toppings++] = parseInt($(this).val());
+      });
+    
     var quantity = parseInt($("input[name=quantity]:checked").val()); 
     var order = new Pizza(quantity, toppings, pieSize);
-    var total = order.price();
+    var total = order.price().toFixed(2);
 
       $(".amount").text(total);
       $("#result").show();
+      
+    clearForm();
 
     event.preventDefault();
   });
